@@ -1,0 +1,315 @@
+.navbar-top {
+  display: block;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+.navbar-bottom {
+  width: 100%;
+  position: fixed;
+  z-index: 200;
+}
+.nav-link:hover::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #ffff00;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+  transition: 0.3s linear;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #000000;
+}
+.title-judul::after {
+  content: "";
+  display: block;
+  border-bottom: 10px solid transparent;
+  border-image: linear-gradient(
+    0.25turn,
+    rgba(255, 249, 34),
+    rgb(255, 251, 0),
+    rgba(152, 155, 2, 0)
+  );
+  border-image-slice: 1;
+  width: 30%;
+  padding-bottom: 5px;
+}
+.title-kontak::after {
+  content: "";
+  display: block;
+  border-bottom: 10px solid transparent;
+  border-image: linear-gradient(
+    0.25turn,
+    rgba(255, 249, 34),
+    rgb(255, 251, 0),
+    rgba(152, 155, 2, 0)
+  );
+  border-image-slice: 1;
+  width: 30%;
+  padding-bottom: 5px;
+}
+.title-layanan::after {
+  content: "";
+  display: block;
+  margin: auto;
+  border-bottom: 10px solid transparent;
+  border-image: linear-gradient(
+    0.25turn,
+    rgba(56, 2, 155, 0),
+    rgba(255, 249, 34),
+    rgba(56, 2, 155, 0)
+  );
+  border-image-slice: 1;
+  width: 250px;
+  padding-bottom: 5px;
+}
+.title-berita::after {
+  content: "";
+  display: block;
+  margin: auto;
+  border-bottom: 10px solid transparent;
+  border-image: linear-gradient(
+    0.25turn,
+    rgba(56, 2, 155, 0),
+    rgba(255, 249, 34),
+    rgba(56, 2, 155, 0)
+  );
+  border-image-slice: 1;
+  width: 250px;
+  padding-bottom: 5px;
+}
+.info {
+  width: 100%;
+  height: 40px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.card-body {
+  padding-top: 4rem;
+  max-width: 100%;
+}
+.container-card {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 10%;
+  gap: 3rem;
+}
+.carousel {
+  padding-top: 6rem;
+}
+#profil {
+  padding-top: 11rem;
+}
+
+.title-judul .judul-profil {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#info {
+  padding-top: 11rem;
+}
+#layanan {
+  padding-top: 11rem;
+  padding-bottom: 6rem;
+}
+.berita .title-berita {
+  font-size: 30px;
+  font-weight: 700;
+}
+.berita {
+  padding-bottom: 8rem !important;
+}
+
+.card_berita .card-link {
+  text-decoration: none;
+  background-color: rgb(0, 132, 255);
+  color: white;
+  padding: 4px;
+  border-radius: 4px;
+}
+#kontak .kontak_title {
+  font-size: 30px !important;
+  font-weight: 700 !important;
+}
+
+#kontak {
+  padding-top: 11rem !important;
+  padding-bottom: 11rem !important;
+}
+
+.judul-kontak {
+  font-size: 30px;
+  font-weight: 700;
+}
+.judul-kontak p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.footer {
+  /* margin-top: 11rem; */
+}
+
+@media only screen and (max-width: 576px) {
+  .title-logo h6 {
+    display: none;
+  }
+  .header img {
+    padding: 0.5rem 0;
+  }
+  .carousel {
+    padding-top: 8.5rem;
+  }
+  .accordion-header p {
+    font-size: 13.4px;
+  }
+  .accordion-body {
+    font-size: 13.4px;
+    text-align: center;
+  }
+  .title-judul p {
+    text-align: center;
+  }
+  .title-profil p {
+    text-align: center;
+  }
+  .container-card {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 10%;
+    gap: 3rem;
+  }
+  .nav-link:hover::after {
+    content: "";
+    display: none;
+  }
+  .title-kontak {
+    text-align: center;
+  }
+  .judul-kontak {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .title-kontak .deskripsi {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .title-judul .judul-profil {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .title-judul .deskripsi-profil p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .img-profil img {
+    padding-top: 2rem;
+    width: 370px;
+    height: auto;
+  }
+  .title-profil {
+    padding-top: 1rem;
+  }
+  .title-kontak::after {
+    content: "";
+    display: block;
+    margin: auto;
+    border-bottom: 10px solid transparent;
+    border-image: linear-gradient(
+      0.25turn,
+      rgba(56, 2, 155, 0),
+      rgba(255, 249, 34),
+      rgba(56, 2, 155, 0)
+    );
+    border-image-slice: 1;
+    width: 30%;
+    padding-bottom: 5px;
+  }
+  .title-judul::after {
+    content: "";
+    display: block;
+    margin: auto;
+    border-bottom: 10px solid transparent;
+    border-image: linear-gradient(
+      0.25turn,
+      rgba(56, 2, 155, 0),
+      rgba(255, 249, 34),
+      rgba(56, 2, 155, 0)
+    );
+    border-image-slice: 1;
+    width: 30%;
+    padding-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .title-logo h6 {
+    display: none;
+  }
+  .header img {
+    padding: 0.5rem 0;
+  }
+  .carousel {
+    padding-top: 8.5rem;
+  }
+  .container-card {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 10%;
+    gap: 3rem;
+  }
+  .nav-link:hover::after {
+    content: "";
+    display: none;
+  }
+  .card-link {
+    font-size: 12px;
+  }
+  .card-subtitle {
+    font-size: 14px;
+  }
+
+  .card-text {
+    font-size: 11.5px;
+  }
+  .judul-kontak {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .img-profil img {
+    padding-top: 2rem;
+    width: 370px;
+    height: auto;
+  }
+  .title-judul .deskripsi-profil p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .carousel {
+    padding-top: 8.2rem;
+  }
+  .container-card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10%;
+    gap: 3rem;
+  }
+  .title-judul .deskripsi-profil p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+  }
+}
